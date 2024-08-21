@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <p>log</p>
+    <script>
+        let key = "email";
+        let objea = {
+            Name: "Deepsinh",
+            Age: 20,
+            Hobbi: ["Game", "PUBG", "NOthing"],
+            "Nic Name": "deep"
+        }
+        for(let key in objea){
+            console.log(`${key}:${objea[key]}`);
+        }
+
+        console.log(Object.keys(objea));
+        console.log(Array.isArray(Object.keys(objea)));
+
+        for (let key of Object.keys(objea)) {
+            console.log(`${key}:${objea[key]}`);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        let number = [60, 80, 81, 654, 32];
+        number.sort();
+        console.log(number);
+        // lowtohie
+        number.sort((a, b) => {
+            return a - b;
+        });
+        console.log(number);
+        // highttolow
+        number.sort((a, b) => {
+            return b - a;
+        });
+        console.log(number);
+
+        // flipcart low to hie
+        const prodacyt = [
+            { Prodatnuber: 1, produtn: "TV", prize: 201 },
+            { Prodatnuber: 2, produtn: "ICREM", prize: 2400 },
+            { Prodatnuber: 3, produtn: "GIJAR", prize: 2040 },
+            { Prodatnuber: 4, produtn: "MOBLIE", prize: 2100 },
+            { Prodatnuber: 5, produtn: "PHONE", prize: 201 },
+            { Prodatnuber: 6, produtn: "LCD TV", prize: 20 },
+            { Prodatnuber: 7, produtn: "LCD", prize: 10 },
+        ];
+
+        let lowtohigh=prodacyt.slice(0).sort((a,b)=> {
+            return a.prize-b.prize;
+        });
+        console.log(lowtohigh);
+        let hightolow=prodacyt.slice(0).sort((a,b)=> {
+            return b.prize-a.prize;
+        });
+        console.log(hightolow);
+        console.log(prodacyt);
+    </script>
+</body>
+
+</html>

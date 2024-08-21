@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        let number =[1,2,3,4,5];
+        // let number ={1:"asdas"};
+
+        console.log(typeof number);
+        // console.log(Object.getPrototypeOf(number));
+        console.log(Array.isArray((number)));
+
+        function hello(){
+            console.log("Hello");
+        }
+        console.log(hello.prototype);
+        hello.prototype=[]
+        console.log(hello.prototype);
+        hello.prototype=["1",2]
+        console.log(hello.prototype);
+    </script>
+</body>
+</html>

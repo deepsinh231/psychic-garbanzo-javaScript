@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison operators</title>
+    <style>
+        body {
+            background-image: linear-gradient(to top, rgba(123, 125, 34, 0.475), rgba(231, 80, 213, 0.516), rgba(130, 255, 67, 0.352));
+            height: 100vh;
+            counter-reset: deep;
+            font-family: cursive;
+        }
+
+        button {
+
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            background: rgb(178, 178, 178);
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline;
+        }
+
+        .add {
+            margin: 10px;
+        }
+
+        button:hover,
+        .add:hover {
+            color: rgb(31, 31, 31);
+            background: rgb(192, 192, 192);
+            /* box-shadow: 1px 1px 5px black; */
+            transition: all 0.3s;
+            border-radius: 20px;
+        }
+
+        h1::before {
+            counter-increment: deep;
+            content: counter(deep)"." "";
+            position: absolute;
+            left: 0;
+        }
+
+        
+
+        h1 {
+            padding-left: 30px;
+            border-bottom: 1px black dotted;
+
+        }
+
+        p::after {
+            content: "."counter(deep);
+            position: absolute;
+            right: 0;
+            font-size: 20px;
+        }
+        .Btn_index {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <button><a class="add" href="../index.html">Go Back</a></button>
+    <h1><a class="Btn_index" href="./if else/if_elsh_age_valid.html"><p>if_elsh_age_valid</p></a></h1>
+    <h1><a class="Btn_index" href="./if else/if_elsh_Male_femal.html"><p>if_elsh_Male_femal</p></a></h1>
+    <h1><a class="Btn_index" href="./if else/falsy_values.html"><p>falsy truthy values</p></a></h1>
+    <h1><a class="Btn_index" href="./if else/odd_evan.html"><p>odd evan</p></a></h1>
+
+</body>
+
+</html>

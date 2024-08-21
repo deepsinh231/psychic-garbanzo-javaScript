@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        let Pearsan = new Map();
+        Pearsan.set("deepsinh","Solanki")
+        Pearsan.set("age",23)
+        Pearsan.set(1,"one")
+        // Pearsan.set([1,2,96,9],"one")
+
+        // console.log(Pearsan.get("age"));
+        // for (const key of Pearsan.keys()) {
+        //     console.log(typeof key);
+        // }
+        for (const [key,Valu] of Pearsan) {
+            console.log(key,Valu);
+            // console.log(typeof key);
+            // console.log(Array.isArray(key));
+        }
+
+        const parsan1 ={
+            id:1,
+            Firstname:"deepsin"
+        } 
+        const parsan2 ={
+            id:2,
+            Firstname:"Nidhi"
+        } 
+        let extravalu =new Map();
+        extravalu.set(parsan1 ,{age:20 ,gender:"male"});
+        extravalu.set(parsan2 ,{age:23 ,gender:"Female"});
+        console.log(extravalu.get(parsan1).gender);
+        console.log(extravalu.get(parsan2).gender);
+
+        for (const [key,v] of extravalu) {
+            console.log(key.Firstname,v.gender);
+        }
+    </script>
+</body>
+</html>

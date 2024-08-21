@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        const parsan1 = {
+            id: 1,
+            Firstname: "deepsin",
+            // about()  {
+            //     console.log(this);
+            //     console.log(`My id ${this.id}  name ${this.Firstname}`);
+            // }
+            about :()=>  {
+                console.log(this);
+                console.log(`My id ${this.id}  name ${this.Firstname}`);
+            }
+        } 
+        parsan1.about.call(parsan1)
+    </script>
+</body>
+
+</html>

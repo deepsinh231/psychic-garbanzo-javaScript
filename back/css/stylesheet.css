@@ -1,0 +1,46 @@
+body {
+    font-family: monospace;
+    font-size: 19px;
+    counter-reset: deep;
+    background-image: linear-gradient(to right, rgba(123, 125, 34, 0.475), rgba(248, 135, 235, 0.516), rgba(130, 255, 67, 0.352));
+
+}
+
+h1 {
+    counter-reset: solanki;
+    border-bottom: 1px black dotted;
+}
+
+h1::before {
+    counter-increment: deep;
+    content: counter(deep)".";
+}
+
+p {
+    margin-left: 53px;
+    box-shadow: 0px 1px rgba(255, 210, 49, 0.604);
+}
+
+p::before {
+    position: absolute;
+    counter-increment: solanki;
+    left: 10px;
+    content: counter(deep)"." counter(solanki);
+}
+
+table {
+    margin: 0 auto;
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 80%;
+    text-align: center;
+}
+
+td,
+th {
+    border: 1px solid;
+}
+
+a {
+    color: green;
+}

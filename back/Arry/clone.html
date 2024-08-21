@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <p>inspect log</p>
+    <script>
+            // clone arry 3 way slice,concat and [...arry1]
+            let arry1 = ["item1", "item2"];
+        let arry3 =["item4"]
+        //    let arry2=["item1","item2"];
+        // slice
+        // let arry2 = arry1.slice(0).concat(arry3,arry1,"any");
+        // concat
+        // let arry2 = [].concat(arry1,arry3,"any");
+        
+        let arry2 = [...arry1,...arry3,"any"];
+        
+        arry1.push("itme3")
+        console.log(arry1);
+        console.log(arry2);
+    </script>
+</body>
+</html>

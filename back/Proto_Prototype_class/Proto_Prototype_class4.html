@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        function creatuser(firstName, LastName, email, address, age) {
+            const user = Object.create(creatuser.prototype)
+            user.firstName = firstName;
+            user.LastName = LastName;
+            user.email = email;
+            user.age = age;
+            user.address = address;
+            return user;
+        }
+        creatuser.prototype.sing = function () {
+            return "la la la la aa uuu"
+        }
+        creatuser.prototype.is18 = function () {
+            return this.age >= 21
+        }
+        creatuser.prototype.abuut = function () {
+            return `${this.firstName}is ${this.age}`
+        }
+        const user1 = creatuser("deepsinh", "Solanki", "solankideepsinh@gmail.com", "this my home is now", 22)
+        console.log(user1);
+        const user2 = user1.is18()
+        const user3 = user1.abuut()
+        const user4 = user1.sing()
+        console.log(user2);
+        console.log(user3);
+        console.log(user4);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        // console.log(window); 
+        // function Helloe(){
+        //     console.log("Heloow");
+        // }
+        // Helloe.call();
+
+
+
+        // const parsan1 ={
+        //     id:1,
+        //     Firstname:"deepsin",
+        //     about:function(){
+        //         console.log(`My id ${this.id}  name ${this.Firstname}`);
+        //     }
+        // } 
+        // const parsan2 ={
+        //     id:2,
+        //     Firstname:"Nidhi"
+        // } 
+        // parsan1.about.call(parsan1);
+
+        // function about(hobi,gendar){
+        //         console.log(`My id ${this.id}  name ${this.Firstname} my hobbi ${hobi} my ge ${gendar}`);
+        //     }
+        // const parsan1 ={
+        //     id:1,
+        //     Firstname:"deepsin",
+            
+        // } 
+        // const parsan2 ={
+        //     id:2,
+        //     Firstname:"Nidhi"
+        // } 
+
+        // // call
+        // about.call(parsan1,"Play","Male");
+        // about.call(parsan2,"drowing","Female");
+        // // Apply
+        // about.apply(parsan1,["Play","Male"]);
+        // about.apply(parsan2,["drowing","Female"]);
+        // // Bind
+        // //  alwes return function
+        // let fun1 =about.bind(parsan1,"Play","Male");
+        // let fun2 =about.bind(parsan2,"drowing","Female");
+        // fun1();
+        // fun2();
+
+        // Bind 
+        const parsan1 ={
+            id:1,
+            Firstname:"deepsin",
+            about:function(){
+                console.log(`My id ${this.id}  name ${this.Firstname}`);
+            }
+        } 
+        parsan1.about();
+        // let fun =parsan1.about;
+        let fun =parsan1.about.bind(parsan1);
+        fun();
+    </script>
+</body>
+</html>

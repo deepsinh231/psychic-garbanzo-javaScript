@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        #slider {
+            width: 500px;
+            height: 300px;
+            background-color: red;
+            overflow: hidden;
+        }
+
+        .slide {
+            display: inline-block;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="slider">
+        <div id="slide1" class="slide">
+            <img src="https://picsum.photos/id/237/500/300" alt="">
+        </div>
+        <div id="slide2" class="slide">
+            <img src="https://picsum.photos/id/238/500/300" alt="">
+        </div>
+        <div id="slide3" class="slide">
+            <img src="https://picsum.photos/id/239/500/300" alt="">
+        </div>
+        <div id="slide4" class="slide">
+            <img src="https://picsum.photos/id/240/500/300" alt="">
+        </div>
+        <div id="slide5" class="slide">
+            <img src="https://picsum.photos/id/241/500/300" alt="">
+        </div>
+        <div id="slide6" class="slide">
+            <img src="https://picsum.photos/id/242/500/300" alt="">
+        </div>
+    </div>
+
+
+    <script>
+        // JavaScript
+        var currentSlide = 1;
+
+        function moveSlides(direction) {
+            // Hide the current slide
+            document.getElementById('slide' + currentSlide).style.display = 'none';
+
+            // Determine the next slide based on the direction
+            if (direction === 'left') {
+                currentSlide--;
+                if (currentSlide < 1) {
+                    currentSlide = 6;
+                }
+            } else {
+                currentSlide++;
+                if (currentSlide > 6) {
+                    currentSlide = 1;
+                }
+            }
+
+            // Show the next slide
+            document.getElementById('slide' + currentSlide).style.display = 'block';
+        }
+
+        setInterval(function () {
+            moveSlides('right');
+        }, 1000);
+
+    </script>
+</body>
+
+</html>

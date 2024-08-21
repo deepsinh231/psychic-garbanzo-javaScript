@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        function creatuser(firstName, LastName, email, address, age) {
+            creatuser=
+            this.firstName = firstName;
+            this.LastName = LastName;
+            this.email = email;
+            this.age = age;
+            this.address = address;
+        }
+        creatuser.prototype.sing = function () {
+            return "la la la la aa uuu"
+        }
+        creatuser.prototype.is18 = function () {
+            return this.age >= 21
+        }
+        creatuser.prototype.abuut = function () {
+            return `${this.firstName}is ${this.age}`
+        }
+        const user_1 = new creatuser("deepsinh", "Solanki", "solankideepsinh@gmail.com", "this my home is now", 22)
+        const user_2 = new creatuser("Raju", "Solanki", "raju@gmail.com", "this my home is now", 20)
+        console.log(user_1);
+        console.log(user_2);
+        const user2 = user_1.is18()
+        const user3 = user_1.abuut()
+        const user4 = user_1.sing()
+        console.log(user2);
+        console.log(user3);
+        console.log(user4);
+
+        for (const key in user_1) {
+            if(user_1.hasOwnProperty(key)){
+                console.log(key);
+            }
+        }
+    </script>
+</body>
+
+</html>

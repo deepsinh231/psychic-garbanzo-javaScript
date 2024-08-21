@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        class Creatuser {
+            constructor(firstName, LastName, email, address, age) {
+                // const user = Object.create(creatuser.prototype)
+                this.firstName = firstName;
+                this.LastName = LastName;
+                this.email = email;
+                this.age = age;
+                this.address = address;
+                // return user;
+
+            }
+            sing() { return "la la la la aa uuu" }
+            is18() { return this.age >= 21 }
+            abuut() { return `${this.firstName}is ${this.age}` }
+        }
+        const deepsi = new Array(1, 2, 3)
+        // const deepsi = [1,2,3]
+
+        console.log(deepsi);
+        const user_1 = new Creatuser("deepsinh", "Solanki", "solankideepsinh@gmail.com", "this my home is now", 22)
+        const user_2 = new Creatuser("Raju", "Solanki", "raju@gmail.com", "this my home is now", 20)
+        console.log(user_1);
+        console.log(user_2.firstName);
+        // console.log(Object.getPrototypeOf(Creatuser));
+    </script>
+</body>
+
+</html>

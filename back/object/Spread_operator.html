@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        const arry1 = [1, 2, 3];
+        const arry2 = [4, 5, 6];
+
+        // const arry3 =[...arry1,...arry2,55,88];
+        // const arry3 =[..."123456789"];
+        // const arry3 =[...'abcdefghijkl'];
+        const objects = {
+            key1: "value1",
+            key2: "value2",
+            // key1: "Newvalu",
+        }
+        console.log(objects);
+        const obj2 = {
+            key3: "value3",
+            key4: "value4",
+            key1: "Ram",
+        }
+        const newobj = {...objects,...obj2}
+        console.log(newobj);
+
+        const fist = {...["itm1","itm2"]}
+        console.log(fist);
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        // let deepsinh = [1, 2, 3, 4,5];
+        
+        // let sum = deepsinh.reduce((accumulator, currentvalu) => {
+            //     // console.log(accumulator  );
+            //     return accumulator + currentvalu;
+        // },10);
+        // console.log(sum);
+        // // accumulator , currentvalu , return
+        // //  1               2           3
+        // //  3               3           6
+        // //  6               4           10
+        // //  10              5           15               
+        
+        // let deepsinh =20;
+        // let deep = deepsinh;
+        // console.log(deep);
+        // deepsinh++
+        // console.log(deepsinh);
+        // console.log("deep:"+deep);
+        // console.log(deepsinh);
+
+        //
+        let usarcart = [
+            { prodact: 1, PradutName: "Tv", prize: 1000 },
+            { prodact: 2, PradutName: "leptop", prize: 1000 },
+            { prodact: 3, PradutName: "leptop", prize: 1000 },
+            { prodact: 4, PradutName: "leptop", prize: 1000 },
+            { prodact: 2, PradutName: "leptop", prize: 1000 },
+            { prodact: 2, PradutName: "leptop", prize: 1000 },
+            { prodact: 2, PradutName: "leptop", prize: 1000 },
+            { prodact: 2, PradutName: "leptop", prize: 1000 },
+            { prodact: 3, PradutName: "phone", prize: 40000 }
+        ];
+        
+
+
+        let totral = usarcart.reduce((procu, prixe) => {
+            return procu + prixe.prize;
+        },0);
+        console.log(totral);
+        // let prodattoatal = usarcart.reduce((procu) => {
+        //     // index++
+        //     return procu;
+        // }
+        // );
+        // console.log(prodattoatal);
+
+    </script>
+</body>
+
+</html>

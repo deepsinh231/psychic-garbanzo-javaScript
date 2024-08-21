@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        // 
+        let sum = function (n = 0, m = 0) {
+            console.log(n + m);
+        }
+        sum(10 + 20, 20);
+        // 
+        let deep = function (array, valufind) {
+            for (let index = 0; index < array.length; index++) {
+                if (array[index] === valufind) {
+                    return index;
+                }
+            }
+            return "nothi";
+        }
+        let deepsinh = [20, 320, 5, 965, 56, 6, 849, 849, 2, 0, 2, 6, 59, 6];
+        let nuber = deep(deepsinh, 6);
+        console.log(nuber);
+        // 
+        let  evannum=function(num) {
+            // two
+            return num % 2 === 0;
+            // one
+            // if (num % 2 ===0) {
+            //     return true;
+            // }
+            // return false;
+        }
+        let evan = evannum(61);
+        console.log(evan);
+    </script>
+</body>
+
+</html>

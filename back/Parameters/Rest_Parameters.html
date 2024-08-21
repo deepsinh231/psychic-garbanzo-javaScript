@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+    function allnum(...num){
+        total=0;
+        // for (let index = 0; index < num.length; index++) {
+        //         total =total+ num[index];             
+        // }
+        // and
+        for (const any of num) {
+            total=total+any
+        }
+        return total;
+    }
+    let nume= allnum(5,9,10,1)
+    console.log(nume);
+    </script>
+</body>
+
+</html>

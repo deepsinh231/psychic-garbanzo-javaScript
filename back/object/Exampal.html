@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <p>log</p>
+    <script>
+        let key = "email";
+        let objea = {
+            Name: "Deepsinh",
+            Age: 20,
+            Hobbi: ["Game", "PUBG", "NOthing"],
+            "Nic Name": "deep"
+        }
+        console.log(objea);
+        console.log(objea.Age);
+        console.log(objea["Age"]);
+        console.log(objea["Nic Name"]);
+        objea["key"] = "deepsinh231@gmail.com"
+        objea[key] = "deepsinh231@gmail.com"
+        console.log(objea);
+
+        const key1 = "objkey1";
+        const key2 = "objkey2";
+        const value1 = "myValu1";
+        const value2 = "myValu2";
+
+        
+        // ??
+        var objs = {
+            key1: value1,
+            key2: value2,
+        }
+        console.log(objs);
+        var objs = {
+            [key1]: value1,
+            [key2]: value2,
+        }
+        console.log(objs);
+    </script>
+</body>
+
+</html>

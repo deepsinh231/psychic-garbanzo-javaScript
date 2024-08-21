@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(to left, rgba(123, 125, 34, 0.475), rgba(231, 80, 213, 0.516), rgba(130, 255, 67, 0.352));
+        }
+
+        button {
+
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            background: rgb(178, 178, 178);
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        a {
+            text-decoration: none;
+            display: inline;
+            margin: 10px;
+        }
+
+        button:hover,
+        a:hover {
+            color: rgb(31, 31, 31);
+            background: rgb(192, 192, 192);
+            /* box-shadow: 1px 1px 5px black; */
+            transition: all 0.3s;
+            border-radius: 20px;
+        }
+
+        textarea {
+            background-color: rgba(255, 0, 0, 0);
+            height: 100vh;
+            margin: 20px 0;
+            width: 100%;
+            border: none;
+            resize: none;
+        }
+
+        textarea:focus {
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button><a href="../../index.html">Go Back</a></button>
+    <textarea name="" id="">
+        1. hendal aarry data
+
+        
+        let Datais = [10, 22, 55, 95, 56, 87]
+        Datais.forEach(Newdata => {
+            console.log(Newdata);
+        })
+    </textarea>
+    <script>
+        let Datais = {"math": 90, "Eng": 50, "Phy": 55, "Gujrati": 95, "hindi": 56, "computer": 87};
+        for (const anyname_for_key in Datais) {
+            console.log(Datais);
+            console.log(anyname_for_key);
+            // console.log(Datais[anyname_for_key]);
+           
+        }
+
+        var a_result_object = {"Maths":90,"Eng":92,"Guj":95,"Comp":99};
+        // ES 6 intro
+        for (const anything in a_result_object) {
+          console.log(anything);
+          console.log(a_result_object[anything]);
+        }
+        for (const kaipan of Object.entries(a_result_object)) {
+            console.log(kaipan);
+        }
+
+         // a_result.map(([value,key],i)=>{
+            Object.entries(a_result_object).map((value,key)=>{
+            console.log("key is ",key);
+            console.log("Value is ",value);
+        })
+
+
+        let frot =["apple","banana","chiku"];
+        let deep=[];
+        for(var index in frot){
+            deep.push(frot[index].toUpperCase());
+        }
+        console.log(deep);
+    </script>
+</body>
+
+</html>

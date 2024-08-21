@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+
+        // let number=[2,4,6,8,10,12];
+        // let odd=number.every((findodd)=>findodd%2===0);
+        // console.log(odd);
+
+
+        // 
+        // find the prize 30000 under
+        let usarcart = [
+            { prodact: 1, PradutName: "Tv", prize: 1000 },
+            { prodact: 2, PradutName: "leptop", prize: 1000 },
+            { prodact: 3, PradutName: "leptop", prize: 1000 },
+            { prodact: 4, PradutName: "leptop", prize: 1000 },
+            { prodact: 2, PradutName: "leptop", prize: 1000 },
+            { prodact: 2, PradutName: "leptop", prize: 1000 },
+            { prodact: 2, PradutName: "leptop", prize: 1000 },
+            { prodact: 2, PradutName: "leptop", prize: 1000 },
+            // { prodact: 3, PradutName: "phone", prize: 40000 }
+        ];
+        let odd = usarcart.every((findodd) => findodd.prize < 30000);
+        console.log(odd);
+    </script>
+</body>
+
+</html>

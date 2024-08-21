@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="../../index.html">Back</a></button>
+    <script>
+        // const user ={
+        //     firstName:"deepsinh",
+        //     LastName:"SOlanki",
+        //     email:"solankideepsinh231@gmail.com",
+        //     age:20,
+        //     address:"House Number ,colony, pincode,state",
+        //     abuut:function(){
+        //         return `${this.firstName}is ${this.age}`
+        //     },
+        //     is18:function(){
+        //         return this.age>=21
+        //     }
+        // }
+        // function
+        function creatuser(firstName, LastName, email, address, age) {
+            const user = {}
+            user.firstName = firstName;
+            user.LastName = LastName;
+            user.email = email;
+            user.age = age;
+            user.address = address;
+            user.abuut = function () {
+                return `${this.firstName}is ${this.age}`
+            };
+            user.is18 = function () {
+                return this.age >= 21
+            };
+            return user;
+        }
+        const user1 = creatuser("deepsinh", "Solanki", "solankideepsinh@gmail.com", "this my home is now", 22)
+        console.log(user1);
+        const user2 = user1.is18()
+        const user3 = user1.abuut()
+        console.log(user2);
+        console.log(user3);
+    </script>
+</body>
+
+</html>

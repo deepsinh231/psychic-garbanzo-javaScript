@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left,rgba(123, 125, 34, 0.475),rgba(231, 80, 213, 0.516),rgba(130, 255, 67, 0.352));
+        }
+        button{
+            
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            background: rgb(178, 178, 178);
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+        a{
+            text-decoration: none;
+            display: inline;
+            margin: 10px;
+        }
+        button:hover,a:hover{
+            color: rgb(31, 31, 31);
+            background: rgb(192, 192, 192);
+            /* box-shadow: 1px 1px 5px black; */
+            transition: all 0.3s;
+            border-radius: 20px;
+        }
+        textarea{
+            background-color: rgba(255, 0, 0, 0);
+            height: 100vh;
+            margin: 20px 0;
+            width: 100%;
+            border: none;
+            resize: none;
+        }
+        textarea:focus{
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button><a href="../index.html">Go Back</a></button>
+    <textarea name="" id="">
+        let fastname = "deepsinh"
+        console.log(fastname.length);
+        console.log(fastname[1]);
+        console.log(fastname[fastname.length - 1]);
+
+        let last = "    SolaNki   ";
+        console.log(last, last.length, last.toUpperCase());
+        last = last.trim()
+        console.log(last, last.length, last.toLowerCase());
+
+        let slice = "deepsinh2"
+        console.log(slice.length);
+        slice = slice.slice(0, 8)
+        console.log(slice,slice.length);
+        
+        console.log("changed data type");
+        let date ="20";
+        console.log(typeof date);
+        console.log(typeof +date);
+        let age = 21;
+        console.log(typeof age);
+        console.log(typeof (age+""));
+        
+        let number =20;
+        number =String(number)
+        console.log(number,typeof number);
+        number = Number(number)
+        console.log(number,typeof number);
+
+        // template string
+
+        console.log("template string ");
+        let aboutme = "My name is " + fastname +" my age is " + age;
+        console.log(aboutme);
+        let aboutme_1 =`My name is ${fastname} my age is ${age}`
+        console.log(aboutme_1);
+    </textarea>
+    <script>
+        let fastname = "deepsinh"
+        console.log(fastname.length);
+        console.log(fastname[1]);
+        console.log(fastname[fastname.length - 1]);
+
+        let last = "    SolaNki   ";
+        console.log(last, last.length, last.toUpperCase());
+        last = last.trim()
+        console.log(last, last.length, last.toLowerCase());
+
+        let slice = "deepsinh2"
+        console.log(slice.length);
+        slice = slice.slice(0, 8)
+        console.log(slice,slice.length);
+        
+        console.log("changed data type");
+        let date ="20";
+        console.log(typeof date);
+        console.log(typeof +date);
+        let age = 21;
+        console.log(typeof age);
+        console.log(typeof (age+""));
+        
+        let number =20;
+        number =String(number)
+        console.log(number,typeof number);
+        number = Number(number)
+        console.log(number,typeof number);
+
+        // template string
+
+        console.log("template string ");
+        let aboutme = "My name is " + fastname +" my age is " + age;
+        console.log(aboutme);
+        let aboutme_1 =`My name is ${fastname} my age is ${age}`
+        console.log(aboutme_1);
+    </script>
+</body>
+
+</html>
