@@ -89,6 +89,19 @@
     </ul>
     <p>મૂળભૂત રીતે, synchronous execution sequential છે અને complete થયા પછી જ આગળ વધે છે, જ્યારે asynchronous execution
         immediate return થતી હોય અને processes background માં ચાલુ રહે છે.</p>
+    <h1>what is recursion function in javascript</h1>
+    <p>JavaScript માં recursion એ એક એવી function છે, જે પોતાને જ ફરીથી કૉલ કરે છે. એટલે કે, function自身 જ કૉલ થાય છે
+        તેવું. આ પદ્ધતિ ખાસ કરીને ત્યારે ઉપયોગી થાય છે જ્યારે કોઈ કાર્ય વારંવાર કરવાનો હોય અને દરેક વાર તે જ જટિલતાને
+        ફાળવીને થતો હોય.</p>
+    <p>
+        function factorial(n) {<br>
+        if (n === 0) {<br>
+        return 1; // બેઝ કંડિશન<br>
+        }<br>
+        return n * factorial(n - 1); // recursive call<br>
+        }<br>
+
+        console.log(factorial(5)); // 120</p>
     <h1><a href="./back/Comparison_operators.html">Comparison operators</a></h1>
     <p>Comparison operators can compare numbers or strings and perform evaluations. Expressions that use comparison
         operators do not return a number value as do arithmetic expressions. Comparison expressions return either 1 ,
